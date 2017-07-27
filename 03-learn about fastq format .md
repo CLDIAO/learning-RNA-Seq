@@ -73,8 +73,10 @@ https://zhuanlan.zhihu.com/p/20731723
 `multiqc_report.html ` 得到一个.html。同样在浏览器打开。
 
 这一部分主要学习三位师兄师姐的教程，表示感谢。
-（http://www.biotrainee.com/thread-1831-1-1.html）
-（http://fbb84b26.wiz03.com/share/s/3XK4IC0cm4CL22pU-r1HPcQQ2irG2836uQYm2iZAyh1Zwf3_）
-（https://mp.weixin.qq.com/s/1eaNhzj1R5pQgn7uy8Y7OA）
+http://www.biotrainee.com/thread-1831-1-1.html
+
+http://fbb84b26.wiz03.com/share/s/3XK4IC0cm4CL22pU-r1HPcQQ2irG2836uQYm2iZAyh1Zwf3_
+
+https://mp.weixin.qq.com/s/1eaNhzj1R5pQgn7uy8Y7OA
 
 脚本的话，可能还要慢慢修行的哦。github插入图片的我还是得再试试，毕竟一图胜千言！
