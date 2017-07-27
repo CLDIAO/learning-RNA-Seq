@@ -42,9 +42,39 @@ fastq文件每个序列通常有四行，分别是：
  * -a:接头
  * -q:安静模式
  
- FastQC两种方式分析压缩的fastq文件：`zcat SRR3589956_1.fastq.gz | fastqc -t 4 stdin`,`fastqc SRR3589956_1.fastq.gz`
- 
+ FastQC两种方式分析压缩的fastq文件：
+ `zcat SRR3589956_1.fastq.gz | fastqc -t 4 stdin` 
+ 或者 `fastqc SRR3589956_1.fastq.gz`
+
+
 ` SRR3589956_1_fastqc.html  SRR3589958_2_fastqc.html  SRR3589961_1_fastqc.html    SRR3589956_1_fastqc.zip   SRR3589958_2_fastqc.zip   SRR3589961_1_fastqc.zip     SRR3589956_1.fastq.gz     SRR3589958_2.fastq.gz     SRR3589961_1.fastq.gz       SRR3589956_2_fastqc.html  SRR3589959_1_fastqc.html  SRR3589961_2_fastqc.html    SRR3589956_2_fastqc.zip   SRR3589959_1_fastqc.zip   SRR3589961_2_fastqc.zip     SRR3589956_2.fastq.gz     SRR3589959_1.fastq.gz     SRR3589961_2.fastq.gz       SRR3589957_1_fastqc.html  SRR3589959_2_fastqc.html  SRR3589962_1_fastqc.html    SRR3589957_1_fastqc.zip   SRR3589959_2_fastqc.zip   SRR3589962_1_fastqc.zip     SRR3589957_1.fastq.gz     SRR3589959_2.fastq.gz     SRR3589962_1.fastq.gz       SRR3589957_2_fastqc.html  SRR3589960_1_fastqc.html  SRR3589962_2_fastqc.html    SRR3589957_2_fastqc.zip   SRR3589960_1_fastqc.zip   SRR3589962_2_fastqc.zip     SRR3589957_2.fastq.gz     SRR3589960_1.fastq.gz     SRR3589962_2.fastq.gz       SRR3589958_1_fastqc.html  SRR3589960_2_fastqc.html  SRR_Acc_List.txt            SRR3589958_1_fastqc.zip   SRR3589960_2_fastqc.zip   work                        SRR3589958_1.fastq.gz     SRR3589960_2.fastq.gz `
 
-然后发现每个fastq.gz对应一个.zip和一个.html。.html可以直接用浏览器打开。 
-![image](http://github.com/CLDIAO/learning-RNA-Seq/raw/master/photo/19631_en_1.jpg)
+然后发现每个fastq.gz对应一个.zip和一个.html。.html可以直接用浏览器打开。
+
+![image](http://upload-images.jianshu.io/upload_images/2013053-9aa706f4aca9d37b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+结果有绿色的PASS，黄色的WARN，红色的FAIL。更多信息参考：
+http://yanshouyu.blog.163.com/blog/static/214283182201302835744453/ 
+
+http://jingyan.baidu.com/article/49711c6149e27dfa441b7c34.html 
+
+https://zhuanlan.zhihu.com/p/20731723
+
+为了避免一个个打开.html的麻烦，可以使用multiQC工具。
+
+参考：http://fbb84b26.wiz03.com/share/s/3XK4IC0cm4CL22pU-r1HPcQQ1iRTvV2GwkwL2AaxYi2fXHP7
+
+`conda install -c bioconda multiqc`安装方便。
+
+`multiqc.`进行测试。
+
+`multiqc *fastqc.zip --pdf` 处理我们的结果。
+
+`multiqc_report.html ` 得到一个.html。同样在浏览器打开。
+
+这一部分主要学习三位师兄师姐的教程，表示感谢。
+http://www.biotrainee.com/thread-1831-1-1.html
+http://fbb84b26.wiz03.com/share/s/3XK4IC0cm4CL22pU-r1HPcQQ2irG2836uQYm2iZAyh1Zwf3_
+https://mp.weixin.qq.com/s/1eaNhzj1R5pQgn7uy8Y7OA
+
+脚本的话，可能还要慢慢修行的哦。github插入图片的我还是得再试试。
