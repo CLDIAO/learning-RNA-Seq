@@ -3,6 +3,8 @@
 需要用安装好的sratoolkit把sra文件转换为fastq格式的测序文件，并且用fastqc软件测试测序文件的质量！
 作业，理解测序reads，GC含量，质量值，接头，index，fastqc的全部报告，搜索中文教程，并发在论坛上面。
 
+看在前面：https://zhuanlan.zhihu.com/p/20714540
+
 在第二篇中已经下载了SRR3589956-62的*.sra数据。要把.sra转换为.fastq,要使用的工具是`fastq-dump`,首先查看帮助：
 * INPUT：-A|--accession 序列号
 * PROCESS：Read Splitting, Full Spot Filters, Common Filters, Filters based on alignments, Filters for individual reads。 基本都是些过滤参数。不太常用
