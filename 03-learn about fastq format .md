@@ -56,6 +56,7 @@ fastq文件每个序列通常有四行，分别是：
 ![image](http://upload-images.jianshu.io/upload_images/2013053-9aa706f4aca9d37b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 结果有绿色的PASS，黄色的WARN，红色的FAIL。
+ 
  basic statistics
 * Encoding指测序平台的版本和相应的编码版本号，这个在计算Phred反推error P的时候有用，如果不明白可以参考之前的文章。
 * Total Sequences记录了输入文本的reads的数量
@@ -93,6 +94,33 @@ per sequence quality scores
 
 * 数据中，测序结果集中在高分中，证明测序质量良好。
 
+per base sequence content
+
+* 横轴是碱基序列，纵轴是百分比
+
+* 四条线表示ATGC在没个位子的平均含量
+
+* 理论上A=T,G=C，一般测序开始时测序仪不稳定，前一部分需要cut
+
+per sequence GC content
+
+* 横轴0-100%，纵轴是每条序列GC含量对应的数量
+
+* 蓝色线是理论值，红色线是真实值，二者应该比较接近
+
+* 红色出现双峰的话肯定混入其他物种DNA序列
+
+sequence length distribution
+
+* 长度理论上应该完全相等，但总会有偏差，如果严重的话，测序数据不可信
+
+adapter content
+
+* 衡量序列中两端adapter的情况，分析前是要去adapter的
+
+kmer content
+
+* 统计序列中某些特征的短序列重复出现的次数，可能是adapter没有去处干净，可以cut
 
 
 更多信息参考：
