@@ -55,7 +55,47 @@ fastq文件每个序列通常有四行，分别是：
 
 ![image](http://upload-images.jianshu.io/upload_images/2013053-9aa706f4aca9d37b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-结果有绿色的PASS，黄色的WARN，红色的FAIL。更多信息参考：
+结果有绿色的PASS，黄色的WARN，红色的FAIL。
+ basic statistics
+* Encoding指测序平台的版本和相应的编码版本号，这个在计算Phred反推error P的时候有用，如果不明白可以参考之前的文章。
+* Total Sequences记录了输入文本的reads的数量
+* Sequence length 是测序的长度
+* %GC 是我们需要重点关注的一个指标，这个值表示的是整体序列中的GC含量，这个数值一般是物种特意的，比如人类细胞就是42%左右。
+
+per base sequence quality
+* 横轴是测序的碱基序列
+ 
+* 纵轴是质量得分，Q = -10 * log10（error P）即20表示1%的错误率，30表示0.1%
+
+* 图中每1个boxplot，都是该位置的所有序列的测序质量的一个统计，上面的bar是90%分位数，下面的bar是10%分位数，箱子的中间的横线是50%分位数，箱子的上边是75%分位数，下边是25%分位数
+
+* 图中蓝色的细线是各个位置的平均值的连线
+
+* 一般此图要求所有位置的10%分位数大于20，即Q20过滤
+
+* warning：有任何碱基质量低于10，或任何中位数低于25
+
+* failure：如果任何碱基质量低于5，或者任何中位数低于20
+
+per tile sequece quality:
+
+* 横轴表示碱基序列，纵轴表示tile的index编号
+
+* 蓝色表示测序质量高，暖色表示质量不高，可以在后续分析中把这些去除
+
+per sequence quality scores
+
+* 序列每个碱基位置Q的平均值是这条reads的质量值
+
+* 横轴表示Q 值
+
+* 纵轴表示每个值对应的reads数目
+
+* 数据中，测序结果集中在高分中，证明测序质量良好。
+
+
+
+更多信息参考：
 http://yanshouyu.blog.163.com/blog/static/214283182201302835744453/ 
 
 http://jingyan.baidu.com/article/49711c6149e27dfa441b7c34.html 
