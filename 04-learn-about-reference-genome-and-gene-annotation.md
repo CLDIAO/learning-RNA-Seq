@@ -4,7 +4,13 @@
 
 参考基因组
 =======
-### 在UCSC下载hg19参考基因组: http://genome.ucsc.edu/index.html
+在UCSC下载hg19参考基因组: http://genome.ucsc.edu/index.html
+-----
 
-![](https://camo.githubusercontent.com/36a38abdd66557dbc0a0fcdabb7357a1ad02e7fa/687474703a2f2f6f6578373530677a742e626b742e636c6f7564646e2e636f6d2f31372d372d31392f36383830333734362e6a7067)
-![]
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/1.jpg)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/2.jpg)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/3.jpg)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/4.jpg)
