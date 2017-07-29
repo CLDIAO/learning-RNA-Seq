@@ -42,3 +42,6 @@
 
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5.jpg)
 
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/6.jpg)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/7.jpg)
