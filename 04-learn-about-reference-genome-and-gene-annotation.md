@@ -80,8 +80,8 @@ Download and unzip the zip archive, then double-click the "igv.bat" file to star
 
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/8.jpg)
 
-![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/9.jpg)
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/9.JPG)
 
-![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/10.jpg)
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/10.JPG)
 
 
