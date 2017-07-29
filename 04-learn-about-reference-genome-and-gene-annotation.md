@@ -45,3 +45,43 @@
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/6.jpg)
 
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/7.jpg)
+
+GFF/GTF 参照：http://www.ensembl.org/info/website/upload/gff.html
+
+The GTF (General Transfer Format) is identical to GFF version 2.
+Fields must be tab-separated. Also, all but the final field in each feature line must contain a value; "empty" columns should be denoted with a '.'
+
+* seqname - name of the chromosome or scaffold; chromosome names can be given with or without the 'chr' prefix. Important note: the * seqname must be one used within Ensembl, i.e. a standard chromosome name or an Ensembl identifier such as a scaffold ID, without any additional content such as species or assembly. See the example GFF output below.
+* source - name of the program that generated this feature, or the data source (database or project name)
+* feature - feature type name, e.g. Gene, Variation, Similarity
+* start - Start position of the feature, with sequence numbering starting at 1.
+* end - End position of the feature, with sequence numbering starting at 1.
+* score - A floating point value.
+* strand - defined as + (forward) or - (reverse).
+* frame - One of '0', '1' or '2'. '0' indicates that the first base of the feature is the first base of a codon, '1' that the second base is the first base of a codon, and so on..
+* attribute - A semicolon-separated list of tag-value pairs, providing additional information about each feature.
+
+GFF2弃用后使用GFF3：http://gmod.org/wiki/GFF3
+
+两个都下载也是可以的，总共才100M左右吧：smile：
+
+`nohup wget ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_26/GRCh37_mapping/gencode.v26lift37.annotation.gtf.gz &`
+`nohuop wget ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_26/GRCh37_mapping/gencode.v26lift37.annotation.gff3.gz &`
+
+下载基因组浏览器进行可视化。
+
+IGV， Integrative Genomics Viewer
+-------
+
+下载地址为： http://software.broadinstitute.org/software/igv/download 
+
+Windows下：
+Download and unzip the zip archive, then double-click the "igv.bat" file to start IGV. A black console window will appear, followed by the IGV application. This option includes a modified Java executable for use with high-resolution screens.
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/8.jpg)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/9.jpg)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/10.jpg)
+
+
