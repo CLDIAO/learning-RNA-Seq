@@ -66,6 +66,7 @@ GFF2弃用后使用GFF3：http://gmod.org/wiki/GFF3
 两个都下载也是可以的，总共才100M左右吧：smile：
 
 `nohup wget ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_26/GRCh37_mapping/gencode.v26lift37.annotation.gtf.gz &`
+
 `nohuop wget ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_human/release_26/GRCh37_mapping/gencode.v26lift37.annotation.gff3.gz &`
 
 下载基因组浏览器进行可视化。
@@ -97,5 +98,7 @@ Download and unzip the zip archive, then double-click the "igv.bat" file to star
 在file-load file 选择sorted .gff3
 
 参考：http://www.biotrainee.com/thread-1835-1-2.html
+
 http://mp.weixin.qq.com/s/mq--yW_vmm2C2ZpnYiPq-A
+
 http://fbb84b26.wiz03.com/share/s/3XK4IC0cm4CL22pU-r1HPcQQ1lZQRc2nKQhn2SthRW24I8CZ
