@@ -84,14 +84,18 @@ Download and unzip the zip archive, then double-click the "igv.bat" file to star
 
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/10.JPG)
 
-在genomes选项中，load file ,选择准备好的hg19.fa。
+在genomes-load file 选择准备好的hg19.fa
 
-![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/11.JPG)
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/11.png)
 
 将下载好的gff3解压，在tools-run igvtools中，选择command-sort将文件进行分类处理。
 
-![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/12.JPG)
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/12.png)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/13.png)
 
 在file-load file 选择sorted .gff3
 
-![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/13.JPG)
+参考：http://www.biotrainee.com/thread-1835-1-2.html
+http://mp.weixin.qq.com/s/mq--yW_vmm2C2ZpnYiPq-A
+http://fbb84b26.wiz03.com/share/s/3XK4IC0cm4CL22pU-r1HPcQQ1lZQRc2nKQhn2SthRW24I8CZ
