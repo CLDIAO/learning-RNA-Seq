@@ -97,6 +97,9 @@ Download and unzip the zip archive, then double-click the "igv.bat" file to star
 
 在file-load file 选择sorted .gff3
 
+效果图：
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/14.png)
+
 参考：http://www.biotrainee.com/thread-1835-1-2.html
 
 http://mp.weixin.qq.com/s/mq--yW_vmm2C2ZpnYiPq-A
