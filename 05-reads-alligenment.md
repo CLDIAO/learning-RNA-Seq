@@ -6,5 +6,20 @@
 
 hisat2:https://ccb.jhu.edu/software/hisat2/index.shtml
 
-![](https://github.com/CLDIAO/learning-RNA-Seq/graph/5/1.JPG)
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/1.JPG)
+
+获取hg19和mm10的index。
+
+`cd reference && mkdir index && cd index`
+
+`axel -a ftp://ftp.ccb.jhu.edu/pub/infphilo/hisat2/data/hg19.tar.gz`
+
+`axel -a ftp://ftp.ccb.jhu.edu/pub/infphilo/hisat2/data/mm10.tar.gz`
+
+#解压缩文件
+
+`tar -zxvf *.tar.gz`
+
+移除压缩包
+`rm -rf *.tar.gz`
 
