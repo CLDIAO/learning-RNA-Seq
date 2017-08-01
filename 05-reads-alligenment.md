@@ -4,4 +4,7 @@
 接着用samtools把它转为bam文件，并且排序(注意N和P两种排序区别)索引好，载入IGV，再截图几个基因看看！
 顺便对bam文件进行简单QC，参考直播我的基因组系列。
 
+hisat2:https://ccb.jhu.edu/software/hisat2/index.shtml
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/graph/5/1.JPG)
 
