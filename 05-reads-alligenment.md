@@ -20,6 +20,58 @@ hisat2:https://ccb.jhu.edu/software/hisat2/index.shtml
 
 `tar -zxvf *.tar.gz`
 
-移除压缩包
+#移除压缩包
 `rm -rf *.tar.gz`
+
+hisat2比对
+-----------
+
+基本用法：` hisat2 [options]* -x <ht2-idx> {-1 <m1> -2 <m2> | -U <r> | --sra-acc <SRA accession number>} [-S <sam>]`
+
+* <ht2-idx>  Index filename prefix (minus trailing .X.ht2).                                                                
+* <m1>       Files with #1 mates, paired with files in <m2>.                                                                                            Could be gzip'ed (extension: .gz) or bzip2'ed (extension: .bz2).                                              
+* <m2>       Files with #2 mates, paired with files in <m1>.                                                                            
+            Could be gzip'ed (extension: .gz) or bzip2'ed (extension: .bz2).                                             
+* <r>        Files with unpaired reads.                                                                                                
+           Could be gzip'ed (extension: .gz) or bzip2'ed (extension: .bz2).                                             
+* <SRA accession number>        Comma-separated list of SRA accession numbers, e.g. --sra-acc SRR353653,SRR353654.        
+* <sam>      File for SAM output (default: stdout)                                                                                       
+<m1>, <m2>, <r> can be comma-separated lists (no whitespace) and can be specified many times.  E.g. '-U file1.fq,file2.fq -U file3.fq'.
+
+RNA-Seq数据中，56、57、58是homo，60、61、62是mus，所以需要分别进行比对：
+
+`mkdir aligned && cd aligned`
+
+>for i in `seq 56 58· `
+
+`do`
+
+`hisat2 -t -x /mnt/d/rna_seq/data/reference/index/hg19/genome -1 /mnt/d/rna-seq/data/SRR358994{i}_1.fastq.gz -2 SRR35899${i}_2.fastq.gz -S /mnt/d/rna_seq/aligned/SRR35899${i}.sam &`
+
+`done`
+
+>for i in `seq 59 62` 
+
+`do `
+
+`hisat2 -t -x /mnt/d/rna_seq/data/reference/index/mm10/genome -1 /mnt/d/rna-seq/data/SRR358994{i}_1.fastq.gz -2 SRR35899${i}_2.fastq.gz -S /mnt/d/rna_seq/aligned/SRR35899${i}.sam &`
+
+`done`
+
+这样会得到7个.sam文件
+
+
+
+
+samtools的使用
+---------
+`samtools --help`:最常用的就是格式转换`view`、排序`sott`、索引`index`。
+
+`view`命令参数 -S 输入sam文件， -b 输出文件为bam。之后重定向写入bam文件。
+
+`for ((i=56;i<=62;i++));do samtools view -S SRR35899${i}.sam -b > SRR35899${i}.bam;done`
+
+`for ((i=56;i<=62;i++));do samtools sort SRR35899${i}.bam -o SRR35899${i}.sorted.bam;done`
+
+`for ((i=56;i<=62;i++));do samtools index SRR35899${i}_sorted.bam;done`
 
