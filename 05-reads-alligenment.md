@@ -46,7 +46,7 @@ RNA-Seq数据中，56、57、58是homo，60、61、62是mus，所以需要分别
 
 `do`
 
-`hisat2 -t -x /mnt/d/rna_seq/data/reference/index/hg19/genome -1 /mnt/d/rna-seq/data/SRR358994{i}_1.fastq.gz -2 SRR35899${i}_2.fastq.gz -S /mnt/d/rna_seq/aligned/SRR35899${i}.sam &`
+`hisat2 -t -x /mnt/d/rna_seq/data/reference/index/hg19/genome -1 /mnt/d/rna_seq/data/SRR358994{i}_1.fastq.gz -2 /mnt/d/rna_seq/data/SRR35899${i}_2.fastq.gz -S /mnt/d/rna_seq/aligned/SRR35899${i}.sam &`
 
 `done`
 
@@ -54,7 +54,7 @@ RNA-Seq数据中，56、57、58是homo，60、61、62是mus，所以需要分别
 
 `do `
 
-`hisat2 -t -x /mnt/d/rna_seq/data/reference/index/mm10/genome -1 /mnt/d/rna-seq/data/SRR358994{i}_1.fastq.gz -2 SRR35899${i}_2.fastq.gz -S /mnt/d/rna_seq/aligned/SRR35899${i}.sam &`
+`hisat2 -t -x /mnt/d/rna_seq/data/reference/index/mm10/genome -1 /mnt/d/rna_seq/data/SRR358994{i}_1.fastq.gz -2 /mnt/d/rna_seq/data/SRR35899${i}_2.fastq.gz -S /mnt/d/rna_seq/aligned/SRR35899${i}.sam &`
 
 `done`
 
