@@ -65,7 +65,7 @@ RNA-Seq数据中，56、57、58是homo，60、61、62是mus，所以需要分别
 
 samtools的使用
 ---------
-`samtools --help`:最常用的就是格式转换`view`、排序`sott`、索引`index`。
+`samtools --help`:最常用的就是格式转换`view`、排序`sort`、索引`index`。
 
 `view`命令参数 -S 输入sam文件， -b 输出文件为bam。之后重定向写入bam文件。
 
@@ -74,4 +74,6 @@ samtools的使用
 `for ((i=56;i<=62;i++));do samtools sort SRR35899${i}.bam -o SRR35899${i}.sorted.bam;done`
 
 `for ((i=56;i<=62;i++));do samtools index SRR35899${i}_sorted.bam;done`
+
+
 
