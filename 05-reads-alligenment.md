@@ -58,7 +58,7 @@ RNA-Seq数据中，56、57、58是homo，60、61、62是mus，所以需要分别
 
 `done`
 
-这样会得到7个.sam文件
+这样会得到7个.sam文件(笔记本能力有限，让同学帮跑的)
 
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/30.png)
 
