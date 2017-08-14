@@ -89,7 +89,7 @@ SAM(sequence alignment/mapping)数据是目前高通量测序中存放对比数�
 
 
 
-`for ((i=56;i<=62;i++));do samtools index SRR35899${i}_sorted.bam;done`
+`for ((i=56;i<=62;i++));do samtools index SRR35899${i}.sorted.bam;done`
 
 
 
