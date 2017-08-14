@@ -60,11 +60,25 @@ RNA-Seq数据中，56、57、58是homo，60、61、62是mus，所以需要分别
 
 这样会得到7个.sam文件
 
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/30.png)
 
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/31.png)
 
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/32.png)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/33.png)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/34.png)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/35.png)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/36.png)
 
 samtools的使用
 ---------
+
+SAM(sequence alignment/mapping)数据是目前高通量测序中存放对比数据的标准格式。目前处理SAM格式的工具主要是SAMtools。
+
 `samtools --help`:最常用的就是格式转换`view`、排序`sort`、索引`index`。
 
 `view`命令参数 -S 输入sam文件， -b 输出文件为bam。之后重定向写入bam文件。
