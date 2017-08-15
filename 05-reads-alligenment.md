@@ -83,13 +83,44 @@ SAM(sequence alignment/mapping)数据是目前高通量测序中存放对比数�
 
 `for ((i=56;i<=62;i++));do samtools view -S SRR35899${i}.sam -b > SRR35899${i}.bam;done`
 
-
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/41.JPG)
 
 `for ((i=56;i<=62;i++));do samtools sort SRR35899${i}.bam -o SRR35899${i}.sorted.bam;done`
 
-
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/62.JPG)
 
 `for ((i=56;i<=62;i++));do samtools index SRR35899${i}.sorted.bam;done`
 
+比对质控（QC）
+------
 
+还是在_A survey of best practices for RNA-seq data analysis_里面，提到了人类基因组应该有70%~90%的比对率，并且多比对read（multi-mapping reads）数量要少。另外比对在外显子和所比对链（uniformity of read coverage on exons and the mapped strand）的覆盖度要保持一致。
 
+常用工具有
+
+Picard https://broadinstitute.github.io/picard/
+RSeQC http://rseqc.sourceforge.net/
+Qualimap http://qualimap.bioinfo.cipf.es/
+
+#需要python2.7
+
+`pip install RSeQC`
+
+`bam_stat.py -i SRR3589956.sorted.bam`
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/43.JPG)
+
+基因组覆盖率的QC需要提供bed文件，可以直接RSeQC的网站下载
+
+` read_distribution.py -i /mnt/e/dealing/SRR3589956.sorted.bam -r /mnt/d/rna_seq/data/reference/hg19_RefSeq.bed`
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/46.JPG)
+
+IGV查看
+-----------
+
+查看几个染色体上的基因。
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/44.JPG)
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/5/45.JPG)
