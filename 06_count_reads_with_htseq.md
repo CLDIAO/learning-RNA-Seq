@@ -12,7 +12,7 @@
 
 #Usage: htseq-count [options] alignment_file gff_file  
 
-`htseq-count -r pos -f bam mnt/e/dealing/SRR3589956.sorted.bam  mnt/e/dealing/data/reference/genome/m10/gencode.v26lift37.annotation.sorted.gtf > SRR3589956.count`
+`htseq-count -r pos -f bam /mnt/e/dealing/SRR3589956.sorted.bam  /mnt/e/dealing/data/reference/genome/m10/gencode.v26lift37.annotation.sorted.gtf > SRR3589956.count`
 
 
 
