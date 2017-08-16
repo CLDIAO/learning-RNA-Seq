@@ -6,3 +6,13 @@
 对这个表达矩阵可以自己简单在excel或者R里面摸索，求平均值，方差。
 看看一些生物学意义特殊的基因表现如何，比如GAPDH,β-ACTIN等等。
 
+#安装
+
+`conda install htseq`
+
+#Usage: htseq-count [options] alignment_file gff_file  
+
+`htseq-count -r pos -f bam mnt/e/dealing/SRR3589956.sorted.bam  mnt/e/dealing/data/reference/genome/m10/gencode.v26lift37.annotation.sorted.gtf > SRR3589956.count`
+
+
+
