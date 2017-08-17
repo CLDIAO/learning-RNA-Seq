@@ -67,4 +67,4 @@ All reviews so far have shown it to be an inferior scale for DE analysis of gene
 
 `gunzip gencode.vM10.annotation.gtf.gz`
 
-`for ((i=59;i<=62;i++));do htseq-count -r pos -f bam /mnt/e/dealing/SRR35899${i}.sorted.bam /mnt/e/dealing/data/reference/genome/m10/gencode.vM10.annotation.gtf > 35899${i}.count;done`
+`for ((i=59;i<=62;i++));do htseq-count -r pos /mnt/e/dealing/SRR35899${i}.sam /mnt/e/dealing/data/reference/genome/m10/gencode.vM10.annotation.gtf > SRR35899${i}.count;done`
