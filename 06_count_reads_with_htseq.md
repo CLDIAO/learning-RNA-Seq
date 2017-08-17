@@ -61,3 +61,10 @@ All reviews so far have shown it to be an inferior scale for DE analysis of gene
 结论： 可以问下原作者他们是如何处理数据的，居然有一个居然没有重复的分析也能过审。改用小鼠数据进行分析。或者使用无重复的分析方法，或者模拟一份数据出来，先把流程走完。
 
 那么就把小鼠的四组数据进行统计
+#下载小鼠的基因组注释
+
+`wget ftp://ftp.sanger.ac.uk/pub/gencode/Gencode_mouse/release_M10/gencode.vM10.annotation.gtf.gz`
+
+`gunzip gencode.vM10.annotation.gtf.gz`
+
+`for ((i=59;i<=62;i++));do htseq-count -r pos -f bam /mnt/e/dealing/SRR35899${i}.sorted.bam /mnt/e/dealing/data/reference/genome/m10/gencode.vM10.annotation.gtf;done`
