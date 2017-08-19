@@ -71,7 +71,9 @@ All reviews so far have shown it to be an inferior scale for DE analysis of gene
 
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/06/603.JPG)
 
-和并表达矩阵
+#htseq输入文件可以选择bam/sam,输入文件是sam格式时，如果是paired-end数据必须按照reads名称排序。感觉.sam 的读取，要比.bam 要慢一些。
+
+合并表达矩阵
 ---
 
 使用R合并表达矩阵
