@@ -115,3 +115,5 @@ All reviews so far have shown it to be an inferior scale for DE analysis of gene
 #查看AKAP95
 
 `AKAP95`
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/06/605.JPG)
