@@ -121,3 +121,14 @@ All reviews so far have shown it to be an inferior scale for DE analysis of gene
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/06/605.JPG)
 
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/06/606.JPG)
+
+参考：
+---
+
+http://www.biotrainee.com/thread-2014-1-1.html
+
+http://www.biotrainee.com/thread-1933-1-3.html
+
+
+
+
