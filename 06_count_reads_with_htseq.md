@@ -70,3 +70,48 @@ All reviews so far have shown it to be an inferior scale for DE analysis of gene
 `for ((i=59;i<=62;i++));do htseq-count -r pos -f bam /mnt/e/dealing/SRR35899${i}.sorted.bam /mnt/e/dealing/data/reference/genome/m10/gencode.vM10.annotation.gtf > SRR35899${i}.count;done`
 
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/06/603.JPG)
+
+和并表达矩阵
+---
+
+使用R合并表达矩阵
+
+>options(stringsAsFactors = FALSE) 
+
+#首先将四个文件分别赋值：control1，control2，rep1，rep2
+
+>control1 <- read.table("D:/rna_seq/data/count/SRR3589959.count", sep = "\t", col.names = c("gene_id", "control1"))
+
+> control2 <- read.table("D:/rna_seq/data/count/SRR3589961.count", sep= "\t", col.names = c("gene_id", "control2")) 
+
+> rep1 <- read.table("D:/rna_seq/data/count/SRR3589960.count", sep="\t", col.names = c("gene_id", "akap951")) 
+
+> rep2 <- read.table("D:/rna_seq/data/count/SRR3589962.count", sep="\t", col.names = c("gene_id", "akap952"))
+
+#将四个矩阵按照gene_id进行合并，并赋值给raw_count
+
+> raw_count <- merge(merge(control1, control2, by="gene_id"), merge(rep1,rep2, by="gene_id"))
+
+#需要将合并的raw_count进行过滤处理，里面有5行需要删除的行，在我们的小鼠的表达矩阵里面，是1,2,48823,48824,48825这5行。并重新赋值给raw_count_filter
+
+>raw_count_filt <- raw_count[-48823:-48825, ]
+
+>raw_count_filter <- raw_count_filt[-1:-2, ]
+
+#因为我们无法在EBI数据库上直接搜索找到ENSMUSG00000024045.5这样的基因，只能是ENSMUSG00000024045的整数，没有小数点，所以需要进一步替换为整数的形式。
+
+#第一步将匹配到的.以及后面的数字连续匹配并替换为空，并赋值给ENSEMBL
+
+>ENSEMBL <- gsub("\\.\\d*", "", raw_count_filt1$gene_id) 
+
+#将ENSEMBL重新添加到raw_count_filt1矩阵
+
+>row.names(raw_count_filter) <- ENSEMBL
+
+#看一些基因的表达情况，在UniProt数据库找到AKAP95的id，并从矩阵中找到访问，并赋值给AKAP95变量
+
+>AKAP95 <- raw_count_filter[rownames(raw_count_filt1)=="ENSMUSG00000024045",]
+
+#查看AKAP95
+
+>AKAP95
