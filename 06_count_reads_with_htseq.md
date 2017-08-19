@@ -102,7 +102,7 @@ All reviews so far have shown it to be an inferior scale for DE analysis of gene
 
 #第一步将匹配到的.以及后面的数字连续匹配并替换为空，并赋值给ENSEMBL
 
->ENSEMBL <- gsub("\\.\\d*", "", raw_count_filt1$gene_id) 
+`ENSEMBL <- gsub("\\.\\d*", "", raw_count_filt1$gene_id) `
 
 #将ENSEMBL重新添加到raw_count_filt1矩阵
 
