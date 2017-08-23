@@ -28,7 +28,7 @@ R包安装：试了几次没成功，提示不可读，就用管理员身份运�
 
 > raw_count_filter <- raw_count_filt[-1:-2, ]
 
-> ENSEMBL <- gsub("\\.\\d*", "", raw_count_filter$gene_id)
+` ENSEMBL <- gsub("\\.\\d*", "", raw_count_filter$gene_id)`
 
 > row.names(raw_count_filter) <- ENSEMBL
 
