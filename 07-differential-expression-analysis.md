@@ -12,31 +12,31 @@ R包安装：试了几次没成功，提示不可读，就用管理员身份运�
 
 1.构建读取表达矩阵
 ---
-> options(stringsAsFactors = FALSE)
+` options(stringsAsFactors = FALSE)`
 
-> control1 <- read.table("D:/rna_seq/data/count/SRR3589959.count", sep = "\t", col.names = c("gene_id", "control1"))
+`control1 <- read.table("D:/rna_seq/data/count/SRR3589959.count", sep = "\t", col.names = c("gene_id", "control1"))`
 
-> control2 <- read.table("D:/rna_seq/data/count/SRR3589961.count", sep= "\t", col.names = c("gene_id", "control2"))
+`control2 <- read.table("D:/rna_seq/data/count/SRR3589961.count", sep= "\t", col.names = c("gene_id", "control2"))`
 
-> rep1 <- read.table("D:/rna_seq/data/count/SRR3589960.count", sep="\t", col.names = c("gene_id", "akap951"))
+` rep1 <- read.table("D:/rna_seq/data/count/SRR3589960.count", sep="\t", col.names = c("gene_id", "akap951"))`
 
-> rep2 <- read.table("D:/rna_seq/data/count/SRR3589962.count", sep="\t", col.names = c("gene_id", "akap952"))
+`rep2 <- read.table("D:/rna_seq/data/count/SRR3589962.count", sep="\t", col.names = c("gene_id", "akap952"))`
 
-> raw_count <- merge(merge(control1, control2, by="gene_id"), merge(rep1,rep2, by="gene_id"))
+` raw_count <- merge(merge(control1, control2, by="gene_id"), merge(rep1,rep2, by="gene_id"))`
 
-> raw_count_filt <- raw_count[-48823:-48825, ]
+`raw_count_filt <- raw_count[-48823:-48825, ]`
 
-> raw_count_filter <- raw_count_filt[-1:-2, ]
+` raw_count_filter <- raw_count_filt[-1:-2, ]`
 
 ` ENSEMBL <- gsub("\\.\\d*", "", raw_count_filter$gene_id)`
 
-> row.names(raw_count_filter) <- ENSEMBL
+` row.names(raw_count_filter) <- ENSEMBL`
 
-> raw_count_filter <- raw_count_filter[ ,-1]
+ `raw_count_filter <- raw_count_filter[ ,-1]`
 
-> write.table(raw_count_filter, file = "C:/Users/刁朝良/Desktop/SRR3.txt", sep = "\t")
+` write.table(raw_count_filter, file = "C:/Users/刁朝良/Desktop/SRR3.txt", sep = "\t")`
 
-> read.table("C:/Users/刁朝良/Desktop/SRR3.txt")
+`read.table("C:/Users/刁朝良/Desktop/SRR3.txt")`
 
 2.构建dds对象
 ----
