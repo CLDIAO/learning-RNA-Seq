@@ -7,6 +7,7 @@ R包安装：试了几次没成功，提示不可读，就用管理员身份运�
 #try http:// if https:// URLs are not supported
 
 >source("https://bioconductor.org/biocLite.R")
+
 >biocLite("DESeq2")
 
 1.构建读取表达矩阵
