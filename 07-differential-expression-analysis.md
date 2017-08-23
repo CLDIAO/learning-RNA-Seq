@@ -3,9 +3,9 @@
 基本任务是得到差异分析结果，进阶任务是比较多个差异分析结果的异同点。
 
 R包安装：试了几次没成功，提示不可读，就用管理员身份运行：
+
 #try http:// if https:// URLs are not supported
 source("https://bioconductor.org/biocLite.R")
-
 biocLite("DESeq2")
 
 1.构建读取表达矩阵
