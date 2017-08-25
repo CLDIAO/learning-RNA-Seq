@@ -40,3 +40,12 @@ R包安装：试了几次没成功，提示不可读，就用管理员身份运�
 
 2.构建dds对象
 ----
+`condition <- factor(c(rep("control",2),rep("akap95",2)), levels = c("control","akap95"))`
+
+`countData <- raw_count_filter[,1:4]`
+
+`colData <- data.frame(row.names=colnames(raw_count_filter), condition)`
+
+`dds <- DESeqDataSetFromMatrix(countData, colData, design= ~ condition)`
+
+`head(dds)`
