@@ -65,4 +65,4 @@ for matrix input: whether the first column of countData is the rownames for the 
 
 `head(dds)`
 
-![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/07/702.PNG)
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/07/702.JPG)
