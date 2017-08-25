@@ -10,6 +10,8 @@ R包安装：试了几次没成功，提示不可读，就用管理员身份运�
 
 >biocLite("DESeq2")
 
+>library("DESeq2")
+
 1.构建读取表达矩阵
 ---
 ` options(stringsAsFactors = FALSE)`
@@ -66,3 +68,56 @@ for matrix input: whether the first column of countData is the rownames for the 
 `head(dds)`
 
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/07/702.JPG)
+
+3.DESeq标准化dds
+--
+`dds2 <- DESeq(dds)`
+
+#出现运行提醒
+
+>estimating size factors
+
+>estimating dispersions
+
+>gene-wise dispersion estimates
+
+>mean-dispersion relationship
+
+>final dispersion estimates
+
+>fitting model and testing
+
+` resultsNames(dds2)`
+
+#resultsNames： returns the names of the estimated effects (coefficents) of the model;
+
+>[1] "Intercept"                   "condition_akap95_vs_control"
+
+`res <- results(dds2)`
+
+#用results()获取结果
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/07/703.JPG)
+
+`mcols(res, use.names = TRUE)`
+
+#mcols()可以查看每一项的具体参数
+
+![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/07/704.JPG)
+
+`summary(res)`
+
+#summary()查看总结的结果：641个基因上调，446个基因下调。
+
+>out of 28335 with nonzero total read count
+>out of 28335 with nonzero total read count
+>adjusted p-value < 0.1
+>LFC > 0 (up)     : 641, 2.3% 
+>LFC < 0 (down)   : 446, 1.6% 
+>outliers [1]     : 0, 0% 
+>low counts [2]   : 13221, 47% 
+>(mean count < 22)
+>[1] see 'cooksCutoff' argument of ?results
+>[2] see 'independentFiltering' argument of ?resultsout of 28335 with nonzero total read count
+
+
