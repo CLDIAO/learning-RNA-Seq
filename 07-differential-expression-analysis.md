@@ -101,7 +101,7 @@ for matrix input: whether the first column of countData is the rownames for the 
 
 `mcols(res, use.names = TRUE)`
 
-#mcols()可以查看每一项的具体参数
+#mcols()可以查看每一项的具体参数,其中padj就是用BH对多重实验进行矫正。
 
 ![](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/07/704.JPG)
 
@@ -128,5 +128,9 @@ for matrix input: whether the first column of countData is the rownames for the 
 >[1] see 'cooksCutoff' argument of ?results
 
 >[2] see 'independentFiltering' argument of ?resultsout of 28335 with nonzero total read count
+
+`res.deseq2 <- subset(res, padj < 0.05)`
+
+#找到差异表达基因，一般p<0.05即为显著，但显著不代表结果正确，为后续富集分析和GSEA提供排序标准和筛选条件。关于p需要再多了解...
 
 
