@@ -110,14 +110,23 @@ for matrix input: whether the first column of countData is the rownames for the 
 #summary()查看总结的结果：641个基因上调，446个基因下调。
 
 >out of 28335 with nonzero total read count
+
 >out of 28335 with nonzero total read count
+
 >adjusted p-value < 0.1
->LFC > 0 (up)     : 641, 2.3% 
+
+>LFC > 0 (up)     : 641, 2.3%
+
 >LFC < 0 (down)   : 446, 1.6% 
+
 >outliers [1]     : 0, 0% 
+
 >low counts [2]   : 13221, 47% 
+
 >(mean count < 22)
+
 >[1] see 'cooksCutoff' argument of ?results
+
 >[2] see 'independentFiltering' argument of ?resultsout of 28335 with nonzero total read count
 
 
