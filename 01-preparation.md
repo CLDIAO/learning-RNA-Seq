@@ -27,15 +27,15 @@
 
 `diaocl@AmazingD:~$ lsb_release -a` #查看系统
 
-`LSB modules are available.  
+`LSB modules are available. 
 
-Distributor ID: Ubuntu  
+`Distributor ID: Ubuntu`  
 
-Description:    Ubuntu 16.04.3 LTS 
+`Description:    Ubuntu 16.04.3 LTS` 
 
-Release:        16.04  
+`Release:        16.04`  
 
-Codename:       xenial`#我的系统状态
+`Codename:       xenial` #我的系统状态
 
 [确认阿里源支持](http://mirrors.aliyun.com/ubuntu/dists/)
 
