@@ -24,11 +24,13 @@
 >sudo apt-get upgrade
 
 [另一种参考](http://www.gutils.com/2016/07/28/linux/ubuntu-ali-source/)
-`diaocl@AmazingD:~$ lsb_release -a` #查看系统                                                                                                                         
-`LSB modules are available.                                                                                                           Distributor ID: Ubuntu                                                                                                                   Description:    Ubuntu 16.04.3 LTS                                                                                                        Release:        16.04                                                                                                                    Codename:       xenial`                                                                                                                  
+`diaocl@AmazingD:~$ lsb_release -a` #查看系统
+
+  `LSB modules are available.                                                                                                              Distributor ID: Ubuntu                                                                                                                   Description:    Ubuntu 16.04.3 LTS                                                                                                       Release:        16.04                                                                                                                   Codename:       xenial`
+
 `diaocl@AmazingD:~$ cd /etc/apt`                                                                                                                                          
 `diaocl@AmazingD:/etc/apt$ sudo mv sources.list sources.list_bak`                                                                                                                                                                               `
-`diaocl@AmazingD:/etc/apt$ sudo vi sources.list
+`diaocl@AmazingD:/etc/apt$ sudo vi sources.list`
 
 `deb http://mirrors.aliyun.com/ubuntu/ xenial main multiverse restricted universe 
 deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main multiverse restricted universe  
