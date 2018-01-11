@@ -27,16 +27,14 @@
 
 `diaocl@AmazingD:~$ lsb_release -a` #查看系统
 
-`LSB modules are available. 
-Distributor ID: Ubuntu  
-Description:    Ubuntu 16.04.3 LTS  
-Release:        16.04 
-Codename:       xenial`
+`LSB modules are available. Distributor ID: Ubuntu  Description:    Ubuntu 16.04.3 LTS  Release:        16.04 Codename:       xenial`#我的系统状态
+
+[确认阿里源支持](http://mirrors.aliyun.com/ubuntu/dists/)
 
 `diaocl@AmazingD:~$ cd /etc/apt`                                                                                                                                          
-`diaocl@AmazingD:/etc/apt$ sudo mv sources.list sources.list_bak`
+`diaocl@AmazingD:/etc/apt$ sudo mv sources.list sources.list_bak`#备份系统源
 
-`diaocl@AmazingD:/etc/apt$ sudo vi sources.list`
+`diaocl@AmazingD:/etc/apt$ sudo vi sources.list`#添加新的源文件
 
 `deb http://mirrors.aliyun.com/ubuntu/ xenial main multiverse restricted universe 
 deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main multiverse restricted universe  
@@ -49,7 +47,9 @@ deb-src http://mirrors.aliyun.com/ubuntu/ xenial-proposed main multiverse restri
 deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main multiverse restricted universe 
 deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main multiverse restricted universe  `                                                                                          
 
-`diaocl@AmazingD:/etc/apt$ sudo apt-get update` 
+`diaocl@AmazingD:/etc/apt$ sudo apt-get update`#进行更新
+
+`sudo apt-get upgrade`
 
 # 软件安装
 ## anaconda安装
