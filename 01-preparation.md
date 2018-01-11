@@ -27,7 +27,7 @@
 
 `diaocl@AmazingD:~$ lsb_release -a` #查看系统
 
-`LSB modules are available. 
+`LSB modules are available.` 
 
 `Distributor ID: Ubuntu`  
 
