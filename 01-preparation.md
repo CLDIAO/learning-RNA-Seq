@@ -44,16 +44,25 @@
 
 `diaocl@AmazingD:/etc/apt$ sudo vi sources.list`#添加新的源文件
 
-`deb http://mirrors.aliyun.com/ubuntu/ xenial main multiverse restricted universe 
-deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main multiverse restricted universe  
-deb http://mirrors.aliyun.com/ubuntu/ xenial-proposed main multiverse restricted universe 
-deb http://mirrors.aliyun.com/ubuntu/ xenial-security main multiverse restricted universe 
-deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main multiverse restricted universe  
-deb-src http://mirrors.aliyun.com/ubuntu/ xenial main multiverse restricted universe  
-deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main multiverse restricted universe  
-deb-src http://mirrors.aliyun.com/ubuntu/ xenial-proposed main multiverse restricted universe 
-deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main multiverse restricted universe 
-deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main multiverse restricted universe  `                                                                                          
+`deb http://mirrors.aliyun.com/ubuntu/ xenial main multiverse restricted universe`
+
+`deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main multiverse restricted universe `
+
+`deb http://mirrors.aliyun.com/ubuntu/ xenial-proposed main multiverse restricted universe`
+
+`deb http://mirrors.aliyun.com/ubuntu/ xenial-security main multiverse restricted universe`
+
+`deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main multiverse restricted universe`
+
+`deb-src http://mirrors.aliyun.com/ubuntu/ xenial main multiverse restricted universe`
+
+`deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main multiverse restricted universe`
+
+`deb-src http://mirrors.aliyun.com/ubuntu/ xenial-proposed main multiverse restricted universe`
+
+`deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main multiverse restricted universe`
+
+`deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main multiverse restricted universe`                                                                                          
 
 `diaocl@AmazingD:/etc/apt$ sudo apt-get update`#进行更新
 
