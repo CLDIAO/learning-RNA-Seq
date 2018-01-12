@@ -81,10 +81,10 @@
 #更新bashrc以立即生效
 `source ~/.bashrc`
 
-运行conda :`conda`查看使用介绍。
+运行`conda`查看使用介绍。
 
 更换conda源：
->config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 
 >conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
 
