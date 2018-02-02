@@ -1,7 +1,7 @@
 
 # 系统准备
 
-①[install linux on windows](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)（稳定性）
+①[install linux on windows](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)（稳定性？）
 
 ②虚拟机安装：
  
