@@ -5,9 +5,9 @@
 
 ②虚拟机安装：
 
-[Virtualbox](http://download.virtualbox.org/virtualbox/5.2.4/VirtualBox-5.2.4-119785-Win.exe)
+ [Virtualbox](http://download.virtualbox.org/virtualbox/5.2.4/VirtualBox-5.2.4-119785-Win.exe)
 
-[ubuntu](http://mirrors.shu.edu.cn/ubuntu-releases/16.04.3/ubuntu-16.04.3-desktop-amd64.iso) (原生系统更稳定)
+ [ubuntu](http://mirrors.shu.edu.cn/ubuntu-releases/16.04.3/ubuntu-16.04.3-desktop-amd64.iso) (原生系统更稳定)
 
 为了提高下载速度，可以替换系统默认像[ustc参考]（http://mirrors.ustc.edu.cn/help/ubuntu.html）
 >#备份
