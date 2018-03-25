@@ -9,7 +9,9 @@
 
   [ubuntu](http://mirrors.shu.edu.cn/ubuntu-releases/16.04.3/ubuntu-16.04.3-desktop-amd64.iso) (原生系统更稳定)
   
-  ### 
+  ### 设置root 账户
+  
+  ![image](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/02/20180305001.PNG)
 
 为了提高下载速度，可以替换系统默认像[ustc参考]（http://mirrors.ustc.edu.cn/help/ubuntu.html）
 >#备份
