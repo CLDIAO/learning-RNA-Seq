@@ -12,6 +12,8 @@
   ### 设置root 账户
   
   ![image](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/02/20180305001.PNG)
+  
+  操作如图。
 
 为了提高下载速度，可以替换系统默认像[ustc参考]（http://mirrors.ustc.edu.cn/help/ubuntu.html）
 >#备份
