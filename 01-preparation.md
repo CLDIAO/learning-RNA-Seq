@@ -14,6 +14,27 @@
   ![image](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/02/20180305001.PNG)
   
   操作如图。
+  
+  ### 安装virtualbox tools
+  
+  virtualbox tools是增强工具，安装后可以设置屏幕分辨率，实现全屏，自由切换鼠标，主机和虚拟机之间的
+  拖放传数据，设置共享文件夹等。步骤：点击virtual box 软件菜单-设备-安装增强功能-run安装工具-输入root
+  账户密码-enter完成安装-重启系统。
+  
+  ### 设置共享文件夹
+  
+  设备-共享粘贴板/拖放-双向。
+  
+  在主机上创建一个文件夹，设备-共享文件夹-固定分配-点击文件夹图标-选择路径并勾选自动挂载和固定分配
+  -重启虚拟机。
+  
+  重启后文件夹里会有个自己命名的文件夹，表示挂载成功。这时普通用户没有权限使用，默认为root用户才能使用。
+  
+ `su`切换到root账户，`chmod -R 777 sf_share`，设置权限，是普通用户也能读写。还要将普通账户添加到vboxsf组中
+ 才能让普通用户使用共享文件夹，这个步骤很重要。`usermod -a -G vboxsf cldiao`。
+ 
+ 重启系统，进入media,可以使用sf_share目录。
+ 
 
 为了提高下载速度，可以替换系统默认像[ustc参考]（http://mirrors.ustc.edu.cn/help/ubuntu.html）
 >#备份
