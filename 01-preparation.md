@@ -1,27 +1,27 @@
 
 # 系统准备
 
-①[install linux on windows](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)（稳定性？）
+## ①[install linux on windows](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)（稳定性？）
 
-②虚拟机安装：
+## ②虚拟机安装：
  
   [Virtualbox](http://download.virtualbox.org/virtualbox/5.2.4/VirtualBox-5.2.4-119785-Win.exe)
 
   [ubuntu](http://mirrors.shu.edu.cn/ubuntu-releases/16.04.3/ubuntu-16.04.3-desktop-amd64.iso) (原生系统更稳定)
   
-  ## 设置root 账户
+### 设置root 账户
   
   ![image](https://github.com/CLDIAO/learning-RNA-Seq/blob/master/graph/02/20180305001.PNG)
   
   操作如图。
   
-  ## 安装virtualbox tools
+### 安装virtualbox tools
   
   virtualbox tools是增强工具，安装后可以设置屏幕分辨率，实现全屏，自由切换鼠标，主机和虚拟机之间的
   拖放传数据，设置共享文件夹等。步骤：点击virtual box 软件菜单-设备-安装增强功能-run安装工具-输入root
   账户密码-enter完成安装-重启系统。
   
-  ## 设置共享文件夹
+### 设置共享文件夹
   
   设备-共享粘贴板/拖放-双向。
   
