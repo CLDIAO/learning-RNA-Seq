@@ -117,6 +117,8 @@
 
 运行`conda`查看使用介绍。
 
+当命令行前面出现(base)的时候说明现在已经在conda的环境中了。
+
 更换conda源：
 >conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 
@@ -128,3 +130,5 @@
 
 >conda config --set show_channel_urls yes
 
+# 参考
+[conda的安装与使用](https://www.jianshu.com/p/edaa744ea47d?tdsourcetag=s_pctim_aiomsg)
